@@ -1,3 +1,5 @@
-#! /bin/bash
+#!/bin/bash
 
-echo -e "\e[36mThis is My Second Script\e[0m"
+COLOR_REST="$(tput sgr0)"
+COLOR_GREEN="$(tput setaf 2)"
+printf '%s%s%s\n' $COLOR_GREEN 'OK' $COLOR_REST
